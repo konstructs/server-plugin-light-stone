@@ -1,0 +1,17 @@
+---
+
+language: java
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+  - openjdk7
+
+deploy:
+  provider: releases
+  api_key:
+    secure: SN12AETrDq3QZi6cWALFrgLqFJI/KS0q+QZDx7mjGEM8CYAmsrdq5i41kcn1niAgGtmES6FTjuZN8z1Xfq+z8ily7nho5ApXMbrDTafUpYXf+EIPA7fLDv2SEHOrX2eRirkvv27YTaTEMZ7SoXe5oQh5aYQAZi810k6t4liG1iYGpXAPH+b4knnGojvC3gzSNRTpZyjxujS9S1DwI8woSD1mFPbbmOgPVqtztT/yRGIDBNlkSDCIIzRyzip8EsTzaW/IZC5yenXc3qrPnOYJoWVZJ+1VLg7n2md5WuJBS85KN1K85ZmetZ4mRogbJhLuAQvKFxBO1WzW6K2gsAI7MIr+x6C3+WazJTDtJweC88rfIXTwY5lyCIoz86sNmh6IuCPhG02pXX3CW5E7xYGF/CN14828I4DP/CpqERfu9NJDbm96WxJAsCwzymgwt2UD/jnniicxGcjweO72hqYZ0N3hbve6XBDUnZOWbywF/+Ve22SsZ0oTpKazsO55Eqn4f5VCd5B5OsBiPGiyo3bwx2Ih3YKer4Xmd0T5lFf+iB6AqUTjYoqUkVPXNRtQ/v9MtF6Vz27gLTB0eDdux92Pc7STuf4+ms+Gf2WSltpRAp3ICKpWCeQqdtNnN3c2gkCaVSvhN+hW5FCndReDpAQPbK4W1iNzUpTCs6PpB3lIjPg=
+  file: build/libs/server-plugin-light-stone.jar
+  on:
+    repo: konstructs/server-plugin-light-stone
+    tags: true
+    jdk: openjdk7
